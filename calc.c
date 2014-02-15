@@ -2,12 +2,15 @@
 #include<stdlib.h>
 
 int add(int x, int y) ;
+int subtract(int x, int y) ;
+
 int multiply(int x, int y) ;
 int divide(int x, int y) ;
-int subtract(int x, int y) ;
+int mod(int x, int y) ;
 int pow(int x, int y);
 
-int main(){
+int main()
+{
 	int x,y;
 	char ch;
 	scanf("%d %c %d",&x,&c,&y);
@@ -25,8 +28,11 @@ int main(){
 		case('/'):	z=divide(x,y);
 				break;
 	
-		case('^'):	z=pow(x,y);
+		case('%'):	z=mod(x,y);
+				break ;
 
+		case('^'):	z=pow(x,y);
+				break ;
 	}
 	printf("RESULT = %d\n",z);
 }
@@ -49,6 +55,11 @@ int multiply(int x, int y)
 int divide(int x, int y)
 {
 	return x / y ;
+}
+
+int mod(int x, int y)
+{
+	return x % y ;
 }
 
 int pow(int x, int y)
