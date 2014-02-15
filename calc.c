@@ -1,8 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
+
 int add(int, int);
 int mult(int, int);
 int subtract(int num1, int num2);
+
 int main(){
 	int x,y;
 	char ch;
