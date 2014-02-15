@@ -6,6 +6,7 @@ int subtract(int x, int y) ;
 
 int multiply(int x, int y) ;
 int divide(int x, int y) ;
+
 int mod(int x, int y) ;
 int pow(int x, int y);
 
