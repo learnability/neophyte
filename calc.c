@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 int add(int, int);
+int subtract(int num1, int num2);
 int main(){
 	int x,y;
 	char ch;
@@ -21,7 +22,12 @@ int main(){
 	}
 	printf("result is %d\n",z);
 }
-int add(int num1, int num2){
+
+int add(int num1, int num2){ // this function is corresponds to Addition
 	return num1+num2;
 
+}
+
+int subtract(int num1, int num2){ //this function corresponds to subtraction
+	return num1-num2;
 }
