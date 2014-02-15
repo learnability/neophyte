@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+int add(int, int);
 int main(){
 	int x,y;
 	char ch;
@@ -20,4 +20,8 @@ int main(){
 			break;
 	}
 	printf("result is %d\n",z);
+}
+int add(int num1, int num2){
+	return num1+num2;
+
 }
