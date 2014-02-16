@@ -12,8 +12,8 @@ int pow(int x, int y);
 
 int main()
 {
-	int x,y;
-	char ch;
+	int x,y,z;
+	char c;
 	scanf("%d %c %d",&x,&c,&y);
 	switch(c)
 	{
