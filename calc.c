@@ -11,10 +11,9 @@ double divide(double x, double y) ;
 int mod(int x, int y) ;
 double pow(double x, double y);
 
-double main()
+int main()
 {
 	double x,y,z;
-	int a ;
 	char c;
 	scanf("%lf %c %lf",&x,&c,&y);
 	switch(c)
@@ -40,7 +39,12 @@ double main()
 		case('l'):	z = log(x)/log(y) ;
 				break ;
 	}
-	prdoublef("RESULT = %lf\n",z);
+	if(c == '%')
+		printf("RESULT = %d\n",(int)z) ;
+	else
+		printf("RESULT = %lf\n",z);
+
+	return 0 ;
 }
 
 double add(double x, double y)
